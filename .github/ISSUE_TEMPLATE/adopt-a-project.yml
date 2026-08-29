@@ -1,0 +1,58 @@
+name: Propose a project to adopt
+description: Suggest an existing Jolt project that jlt-commons should take over
+title: "[adopt] "
+labels: ["proposal", "adoption"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a project. Before filling this in, please skim
+        [PROPOSING.md](https://github.com/jlt-commons/meta/blob/main/PROPOSING.md) so we
+        are working from the same checklist.
+
+        The single most important question is the last one. We do not fork projects away
+        from people who still want them.
+  - type: input
+    id: repo
+    attributes:
+      label: Which project?
+      description: Link to the repository.
+      placeholder: https://github.com/owner/project
+    validations:
+      required: true
+  - type: textarea
+    id: unmaintained
+    attributes:
+      label: What makes you think it is unmaintained?
+      description: |
+        Anything concrete helps: the date of the last release or commit, issues sitting
+        unanswered, whether it still builds on current Jolt.
+    validations:
+      required: true
+  - type: textarea
+    id: used
+    attributes:
+      label: Who uses it?
+      description: |
+        Stars, dependents, or just "my team and two others I know of". A small honest
+        answer is fine; we are trying to avoid adopting things nobody runs.
+    validations:
+      required: true
+  - type: input
+    id: maintainer
+    attributes:
+      label: Who would maintain it?
+      description: A GitHub handle. Volunteering yourself is the most common answer.
+    validations:
+      required: true
+  - type: dropdown
+    id: contacted
+    attributes:
+      label: Has the current owner been asked?
+      options:
+        - "Yes, and they agree to transfer"
+        - "Yes, waiting to hear back"
+        - "Not yet"
+      default: 2
+    validations:
+      required: true

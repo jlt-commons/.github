@@ -1,0 +1,49 @@
+name: Propose a new project
+description: Suggest hosting new community work here, including a port of a Clojure library
+title: "[new] "
+labels: ["proposal", "incubation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The bar here is deliberately low. A real gap and someone willing to maintain it is
+        most of what we are looking for. See
+        [PROPOSING.md](https://github.com/jlt-commons/meta/blob/main/PROPOSING.md).
+  - type: input
+    id: name
+    attributes:
+      label: What would it be called?
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: What gap does it fill?
+      description: |
+        If it is a port of a Clojure library, say which one and link it. If it is new, say
+        what people do today without it.
+    validations:
+      required: true
+  - type: input
+    id: maintainer
+    attributes:
+      label: Who would maintain it?
+      description: A GitHub handle.
+    validations:
+      required: true
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      options:
+        - "EPL-2.0 (default, matches Jolt and Clojure)"
+        - "MIT"
+        - "Apache-2.0"
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: existing
+    attributes:
+      label: Does code exist already?
+      description: Link it if so. An empty answer is fine, this can start from nothing.

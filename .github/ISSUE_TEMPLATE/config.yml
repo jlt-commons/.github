@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Ask a question on Slack
+    url: https://clojurians.net
+    about: "#jolt on the Clojurians Slack. Faster than an issue for anything conversational."
+  - name: Governance and how decisions get made
+    url: https://github.com/jlt-commons/meta/blob/main/GOVERNANCE.md
+    about: Roles, how projects get accepted, how to become a maintainer.
