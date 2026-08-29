@@ -10,7 +10,7 @@ request on any repo here and someone will look at it.
 - **Report something.** Issues on the repo it affects.
 - **Bring a project in.** See [proposing a project](https://github.com/jlt-commons/meta/blob/main/PROPOSING.md),
   then open an issue in [`meta`](https://github.com/jlt-commons/meta/issues).
-- **Maintain a project.** Some projects here are looking for maintainers. Say so in an issue
+- **Maintain a project.** When a project here needs a maintainer, say so in an issue
   in `meta` and it is usually yours.
 
 ## Pull requests
