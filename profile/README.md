@@ -28,11 +28,12 @@ are maintained by the people who brought them.
 | [raygui-jlt](https://github.com/jlt-commons/raygui-jlt) | 24 examples of raygui, raylib's immediate-mode GUI library, bound the same way. [Docs](https://jlt-commons.github.io/raygui-jlt/) |
 | [glitter](https://github.com/jlt-commons/glitter) | A [Replicant](https://github.com/cjohansen/replicant)-style GTK4 renderer: one state atom, a pure `state -> hiccup` view, and event handlers as data. [Docs](https://jlt-commons.github.io/glitter/) |
 | [glitter-gl](https://github.com/jlt-commons/glitter-gl) | OpenGL geometry, matrices and shaders for glitter, plus a `:gl-area` widget to draw them in. [Docs](https://jlt-commons.github.io/glitter-gl/) |
+| [glitter-uikit](https://github.com/jlt-commons/glitter-uikit) | The same renderer model driving native macOS `NSView` widgets through AppKit, rather than GTK4. [Docs](https://jlt-commons.github.io/glitter-uikit/) |
 
-All four arrived by adoption, transferred rather than forked, so their history and
+All five arrived by adoption, transferred rather than forked, so their history and
 issues came with them. Each keeps its original maintainer.
 
-All four publish through [docs-engine](https://github.com/jlt-commons/docs-engine),
+All five publish through [docs-engine](https://github.com/jlt-commons/docs-engine),
 so none of them maintains a site generator of its own, and each site lives at
 `jlt-commons.github.io/<repo>/`.
 
