@@ -26,16 +26,15 @@ are maintained by the people who brought them.
 |---|---|
 | [raylib-jlt](https://github.com/jlt-commons/raylib-jlt) | 119 [raylib](https://www.raylib.com) examples, calling the system `libraylib` over its C ABI through `jolt.ffi`. [Docs](https://jlt-commons.github.io/raylib-jlt/) |
 | [raygui-jlt](https://github.com/jlt-commons/raygui-jlt) | 24 examples of raygui, raylib's immediate-mode GUI library, bound the same way. [Docs](https://jlt-commons.github.io/raygui-jlt/) |
-| [glitter](https://github.com/jlt-commons/glitter) | A [Replicant](https://github.com/cjohansen/replicant)-style GTK4 renderer: one state atom, a pure `state -> hiccup` view, and event handlers as data. [Docs](https://glitter.b12n.app/) |
-| [glitter-gl](https://github.com/jlt-commons/glitter-gl) | OpenGL geometry, matrices and shaders for glitter, plus a `:gl-area` widget to draw them in. [Docs](https://glitter-gl.b12n.app/) |
+| [glitter](https://github.com/jlt-commons/glitter) | A [Replicant](https://github.com/cjohansen/replicant)-style GTK4 renderer: one state atom, a pure `state -> hiccup` view, and event handlers as data. [Docs](https://jlt-commons.github.io/glitter/) |
+| [glitter-gl](https://github.com/jlt-commons/glitter-gl) | OpenGL geometry, matrices and shaders for glitter, plus a `:gl-area` widget to draw them in. [Docs](https://jlt-commons.github.io/glitter-gl/) |
 
 All four arrived by adoption, transferred rather than forked, so their history and
 issues came with them. Each keeps its original maintainer.
 
-The two GTK projects still publish their documentation from where it was built before
-they moved. Both are being brought onto
-[docs-engine](https://github.com/jlt-commons/docs-engine), and their links change to
-`jlt-commons.github.io` when that lands.
+All four publish through [docs-engine](https://github.com/jlt-commons/docs-engine),
+so none of them maintains a site generator of its own, and each site lives at
+`jlt-commons.github.io/<repo>/`.
 
 ## Two ways a project gets here
 
