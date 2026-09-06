@@ -47,6 +47,12 @@ Those six publish through [docs-engine](https://github.com/jlt-commons/docs-engi
 so none of them maintains a site generator of its own, and each site lives at
 `jlt-commons.github.io/<repo>/`.
 
+This table is only what's hosted here. For everything in the wider Jolt ecosystem —
+jolt-lang's own libraries, JVM and Clojure compatibility, docs and tooling — see
+[awesome-jolt](https://github.com/jlt-commons/awesome-jolt), a community-maintained
+curated list. [Its own site](https://jlt-commons.github.io/awesome-jolt/) publishes
+through docs-engine too.
+
 ## Two ways a project gets here
 
 **Adoption.** A Jolt project whose maintainer can no longer look after it, taken over so
