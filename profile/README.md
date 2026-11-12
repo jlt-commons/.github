@@ -16,7 +16,7 @@ found rather than being scattered across personal accounts. The two overlap on p
 This organization's admins are members of jolt-lang too, and four jolt-lang projects
 (instaparse, tapestry, duratom and mulog) have since moved here.
 
-Core-team work lands here directly. Jolt's author has started eight projects in this
+Core-team work lands here directly. Jolt's author has started twenty projects in this
 organization rather than moving them in later, among them
 [ebb](https://github.com/jlt-commons/ebb), [ensemble](https://github.com/jlt-commons/ensemble)
 and [writ](https://github.com/jlt-commons/writ). Anyone else can do the same, member or not.
@@ -28,9 +28,9 @@ once instead of once per repository.
 
 ## Projects
 
-Twenty-four so far. Six arrived by adoption, transferred rather than forked, so their
+Thirty-seven so far. Six arrived by adoption, transferred rather than forked, so their
 history and issues came with them and each kept its original maintainer. Four moved over
-from jolt-lang. Fourteen were started here, eight of them by Jolt's author.
+from jolt-lang. Twenty-seven were started here, twenty of them by Jolt's author.
 
 ### Graphics and games
 
@@ -43,6 +43,9 @@ from jolt-lang. Fourteen were started here, eight of them by Jolt's author.
 | [raylib-ios-demo](https://github.com/jlt-commons/raylib-ios-demo) | What runs on raylib-ios: 137 scenes, each a sub-project that builds an iPhone app of its own, plus a gallery app holding them all. [Docs](https://jlt-commons.github.io/raylib-ios-demo/) |
 | [raylib-android](https://github.com/jlt-commons/raylib-android) | raylib on an Android phone as native arm64 code, with no JVM, Kotlin or Java anywhere in the app. Seventeen scenes under an owner loop of about thirty lines. [Docs](https://jlt-commons.github.io/raylib-android/) |
 | [graviton](https://github.com/jlt-commons/graviton) | A physics game where you place gravitational attractors to steer a ship toward prizes and away from death zones. A Jolt and raylib port of a 2018 ClojureScript game, its field math checked by writ. |
+| [ents](https://github.com/jlt-commons/ents) | [flecs](https://github.com/SanderMertens/flecs) entity component system bindings with a [vybe](https://github.com/pfeodrippe/vybe)-inspired API: components as plain maps, systems and observers over binding vectors. |
+| [slipstream](https://github.com/jlt-commons/slipstream) | GPU vector rendering through [Slughorn](https://github.com/AlphaPixel/slughorn): a declarative scene compiler, a reference GLFW renderer, and an incremental glimmer backend with gradients, masks, compositing, SDF/MSDF and shader effects. |
+| [upbge-jolt](https://github.com/jlt-commons/upbge-jolt) | A Jolt nREPL inside the UPBGE/Blender game engine in place of its Python API, so CIDER, Calva or Cursive can evaluate against the running editor or game. |
 
 ### User interfaces
 
@@ -55,6 +58,7 @@ from jolt-lang. Fourteen were started here, eight of them by Jolt's author.
 | [uikit-demo](https://github.com/jlt-commons/uikit-demo) | A demo of glitter-uikit: a hub of live example windows (counter, currency converter, live FX, particle toy) built as a real macOS app bundle. [Docs](https://jlt-commons.github.io/uikit-demo/) |
 | [nexus-jolt](https://github.com/jlt-commons/nexus-jolt) | A Jolt port of [nexus](https://github.com/cjohansen/nexus): data-driven action/effect/placeholder dispatch, used today by the glitter family. [Docs](https://jlt-commons.github.io/nexus-jolt/) |
 | [ftxui-jolt](https://github.com/jlt-commons/ftxui-jolt) | A reagent-style API over [FTXUI](https://github.com/ArthurSonzogni/FTXUI), the C++ terminal UI library: components as functions returning hiccup, rendered through FTXUI's own event loop, focus handling and mouse support. |
+| [glimmer-bui](https://github.com/jlt-commons/glimmer-bui) | A backend for [glimmer](https://github.com/jolt-lang/glimmer) over [BUI](https://github.com/ppmpreetham/BUI), Blender's UI as a standalone C library: panels, number sliders, color swatches, with damage-driven rendering that costs nothing while idle. |
 
 ### Concurrency and state
 
@@ -73,6 +77,8 @@ from jolt-lang. Fourteen were started here, eight of them by Jolt's author.
 | [mulog](https://github.com/jlt-commons/mulog) | The published [mulog](https://github.com/BrunoBonacci/mulog) 0.9.0, with the Java classes it bundles supplied by portable Jolt registrations. |
 | [aws-api-jolt](https://github.com/jlt-commons/aws-api-jolt) | The unmodified [cognitect aws-api](https://github.com/cognitect-labs/aws-api) Maven release running on Jolt. It supplies an HTTP client and a host-class declaration, and nothing is forked. |
 | [clj-to-ys](https://github.com/jlt-commons/clj-to-ys) | Translates Clojure source into idiomatic [YS (YAMLScript)](https://yamlscript.org), built on the instaparse port. |
+| [jolt-openldk](https://github.com/jlt-commons/jolt-openldk) | Java libraries from Jolt with no JVM, by loading SBCL with [OpenLDK](https://github.com/atgreen/openldk) into the Jolt process and calling across a small C shim. Alpha. |
+| [dodeca](https://github.com/jlt-commons/dodeca) | A port of [A5](https://github.com/felixpalmer/a5), the equal-area pentagonal discrete global grid: indexing, the cell hierarchy, cell measures and grid disks. |
 
 ### Checking and deciding
 
@@ -80,6 +86,18 @@ from jolt-lang. Fourteen were started here, eight of them by Jolt's author.
 |---|---|
 | [writ](https://github.com/jlt-commons/writ) | Checks plain Clojure against a spec of what the code is for: signatures, plus laws run through test.check. Built as a gate for code an LLM writes. |
 | [lev](https://github.com/jlt-commons/lev) | A decision engine that answers typed questions about a state with calibrated probabilities, using small encoder models or a GGUF chat model through llama.cpp. |
+| [augur](https://github.com/jlt-commons/augur) | Statistics for forecasting and learning from outcomes: online Bayesian posteriors with forgetting, calibration, logistic hazards, change-point detection and forecast scoring. |
+| [jolt-metrics](https://github.com/jlt-commons/jolt-metrics) | Code metrics for Clojure, Jolt and Scheme, led by a ranked refactoring queue. Every metric is checked against a writ spec. |
+| [overseer](https://github.com/jlt-commons/overseer) | A local-first agent loop: sensors watch the screen, camera or clipboard, lev decides, and a Jolt function acts on the answer. |
+
+### Agent and editor tooling
+
+| project | what it is |
+|---|---|
+| [jolt-lsp](https://github.com/jlt-commons/jolt-lsp) | A language server and agent toolset for Jolt projects: one pure engine over an in-memory index, with MCP, JSON CLI and LSP as thin transports. |
+| [jolt-nrepl-mcp](https://github.com/jlt-commons/jolt-nrepl-mcp) | An MCP server, written in Jolt, that gives a coding agent a persistent nREPL session: evaluate, reload, run tests, repair syntax and make structural edits. |
+| [jolt-skills](https://github.com/jlt-commons/jolt-skills) | Agent skills for building on the jolt-lang and jlt-commons stack, from projects and FFI to web, data, GUI, games and concurrency. |
+| [nrepl-kimi-code-plugin](https://github.com/jlt-commons/nrepl-kimi-code-plugin) | A Kimi Code plugin, written in Jolt, that evaluates in a persistent Jolt nREPL session. |
 
 Thirteen of these publish through [docs-engine](https://github.com/jlt-commons/docs-engine),
 so none of them maintains a site generator of its own, and each site lives at
@@ -101,8 +119,8 @@ through docs-engine too.
 the community keeps a working version. We ask the current owner first, every time.
 
 **Incubation.** New work started here. Ports of widely used Clojure libraries, and new
-libraries that belong beside the language rather than inside it. Fourteen projects came in
-this way, eight of them started by Jolt's author. The bar is deliberately low: a real gap, and someone willing
+libraries that belong beside the language rather than inside it. Twenty-seven projects came in
+this way, twenty of them started by Jolt's author. The bar is deliberately low: a real gap, and someone willing
 to maintain it.
 
 ## Getting involved
