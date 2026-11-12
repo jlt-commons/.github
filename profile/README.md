@@ -132,7 +132,8 @@ Everyone is welcome to help, member or not. Open an issue or a pull request on a
 - **Talk to us** on **#jolt** on the [Clojurians Slack](https://clojurians.net)
 - **Use the docs engine.** Any project here can publish through
   [docs-engine](https://github.com/jlt-commons/docs-engine): write markdown and a short
-  config file, and CI builds and deploys the site on merge.
+  config file, and CI builds and deploys the site on merge. It's optional, so a project
+  can keep its own site generator or simply document itself in the README.
 
 Licenses vary by project, so check a repo's LICENSE file before reusing its code. EPL-2.0
 is the default for new projects, matching Jolt and Clojure, though MIT and Apache-2.0 are
