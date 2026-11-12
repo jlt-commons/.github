@@ -134,5 +134,6 @@ Everyone is welcome to help, member or not. Open an issue or a pull request on a
   [docs-engine](https://github.com/jlt-commons/docs-engine): write markdown and a short
   config file, and CI builds and deploys the site on merge.
 
-New projects here are EPL-2.0, matching Jolt and Clojure. Adopted projects keep the
-license they arrived with.
+Licenses vary by project, so check a repo's LICENSE file before reusing its code. EPL-2.0
+is the default for new projects, matching Jolt and Clojure, though MIT and Apache-2.0 are
+fine too. Adopted projects keep the license they arrived with.
