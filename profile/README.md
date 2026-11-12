@@ -8,6 +8,9 @@ of Clojure libraries, and new work that would rather start with company than alo
 modelled on [clj-commons](https://github.com/clj-commons), which has done the same job
 for Clojure for years.
 
+<details>
+<summary><b>How this org relates to jolt-lang, and what a project gets here</b></summary>
+
 [jolt-lang](https://github.com/jolt-lang) keeps the language and its standard library,
 and everything growing around them lives here. That is the arrangement Jolt's author,
 Dmitri Sotnikov, proposed when this organization was raised on **#jolt**: the language
@@ -26,13 +29,16 @@ protocol. What it gains by being here is shared ground: a documentation site bui
 published for it, CI that checks it against a current Jolt, and conventions worked out
 once instead of once per repository.
 
+</details>
+
 ## Projects
 
 Thirty-seven so far. Six arrived by adoption, transferred rather than forked, so their
 history and issues came with them and each kept its original maintainer. Four moved over
 from jolt-lang. Twenty-seven were started here, twenty of them by Jolt's author.
 
-### Graphics and games
+<details>
+<summary><b>Graphics and games</b>, 10 projects: raylib on desktop, iPhone and Android, flecs, GPU vector rendering, and an nREPL inside Blender's game engine</summary>
 
 | project | what it is |
 |---|---|
@@ -47,7 +53,10 @@ from jolt-lang. Twenty-seven were started here, twenty of them by Jolt's author.
 | [slipstream](https://github.com/jlt-commons/slipstream) | GPU vector rendering through [Slughorn](https://github.com/AlphaPixel/slughorn): a declarative scene compiler, a reference GLFW renderer, and an incremental glimmer backend with gradients, masks, compositing, SDF/MSDF and shader effects. |
 | [upbge-jolt](https://github.com/jlt-commons/upbge-jolt) | A Jolt nREPL inside the UPBGE/Blender game engine in place of its Python API, so CIDER, Calva or Cursive can evaluate against the running editor or game. |
 
-### User interfaces
+</details>
+
+<details>
+<summary><b>User interfaces</b>, 8 projects: the glitter renderers for GTK4 and macOS, a terminal UI, and a Blender-style glimmer backend</summary>
 
 | project | what it is |
 |---|---|
@@ -60,7 +69,10 @@ from jolt-lang. Twenty-seven were started here, twenty of them by Jolt's author.
 | [ftxui-jolt](https://github.com/jlt-commons/ftxui-jolt) | A reagent-style API over [FTXUI](https://github.com/ArthurSonzogni/FTXUI), the C++ terminal UI library: components as functions returning hiccup, rendered through FTXUI's own event loop, focus handling and mouse support. |
 | [glimmer-bui](https://github.com/jlt-commons/glimmer-bui) | A backend for [glimmer](https://github.com/jolt-lang/glimmer) over [BUI](https://github.com/ppmpreetham/BUI), Blender's UI as a standalone C library: panels, number sliders, color swatches, with damage-driven rendering that costs nothing while idle. |
 
-### Concurrency and state
+</details>
+
+<details>
+<summary><b>Concurrency and state</b>, 4 projects: missionary, Erlang/OTP, structured concurrency and a durable atom</summary>
 
 | project | what it is |
 |---|---|
@@ -69,7 +81,10 @@ from jolt-lang. Twenty-seven were started here, twenty of them by Jolt's author.
 | [tapestry](https://github.com/jlt-commons/tapestry) | Structured concurrency, where a unit of work is a derefable fiber carrying its result, errors, timeouts and cancellation. A port of [teknql/tapestry](https://github.com/teknql/tapestry) onto `core.async`. |
 | [duratom](https://github.com/jlt-commons/duratom) | A durable atom that writes every change through to a pluggable backend. A port of [jimpil/duratom](https://github.com/jimpil/duratom). |
 
-### Libraries and ports
+</details>
+
+<details>
+<summary><b>Libraries and ports</b>, 6 projects: instaparse, mulog, the AWS SDK, Java through OpenLDK, and a geospatial grid</summary>
 
 | project | what it is |
 |---|---|
@@ -80,7 +95,10 @@ from jolt-lang. Twenty-seven were started here, twenty of them by Jolt's author.
 | [jolt-openldk](https://github.com/jlt-commons/jolt-openldk) | Java libraries from Jolt with no JVM, by loading SBCL with [OpenLDK](https://github.com/atgreen/openldk) into the Jolt process and calling across a small C shim. Alpha. |
 | [dodeca](https://github.com/jlt-commons/dodeca) | A port of [A5](https://github.com/felixpalmer/a5), the equal-area pentagonal discrete global grid: indexing, the cell hierarchy, cell measures and grid disks. |
 
-### Checking and deciding
+</details>
+
+<details>
+<summary><b>Checking and deciding</b>, 5 projects: specs for LLM-written code, a decision engine, forecasting statistics and code metrics</summary>
 
 | project | what it is |
 |---|---|
@@ -90,7 +108,10 @@ from jolt-lang. Twenty-seven were started here, twenty of them by Jolt's author.
 | [jolt-metrics](https://github.com/jlt-commons/jolt-metrics) | Code metrics for Clojure, Jolt and Scheme, led by a ranked refactoring queue. Every metric is checked against a writ spec. |
 | [overseer](https://github.com/jlt-commons/overseer) | A local-first agent loop: sensors watch the screen, camera or clipboard, lev decides, and a Jolt function acts on the answer. |
 
-### Agent and editor tooling
+</details>
+
+<details>
+<summary><b>Agent and editor tooling</b>, 4 projects: a language server, an nREPL MCP server, agent skills and a Kimi Code plugin</summary>
 
 | project | what it is |
 |---|---|
@@ -99,6 +120,11 @@ from jolt-lang. Twenty-seven were started here, twenty of them by Jolt's author.
 | [jolt-skills](https://github.com/jlt-commons/jolt-skills) | Agent skills for building on the jolt-lang and jlt-commons stack, from projects and FFI to web, data, GUI, games and concurrency. |
 | [nrepl-kimi-code-plugin](https://github.com/jlt-commons/nrepl-kimi-code-plugin) | A Kimi Code plugin, written in Jolt, that evaluates in a persistent Jolt nREPL session. |
 
+</details>
+
+<details>
+<summary><b>Docs sites and shared tooling</b></summary>
+
 Thirteen of these publish through [docs-engine](https://github.com/jlt-commons/docs-engine),
 so none of them maintains a site generator of its own, and each site lives at
 `jlt-commons.github.io/<repo>/` with search built in. The rest are recent enough that their
@@ -106,6 +132,8 @@ documentation is still the repo README. The org also keeps some shared tooling:
 [setup-jolt](https://github.com/jlt-commons/setup-jolt) installs Jolt on a GitHub Actions
 runner, and [ci-builds](https://github.com/jlt-commons/ci-builds) builds every project
 against one Jolt version so a breaking release shows up the day it ships.
+
+</details>
 
 These tables are only what's hosted here. For everything in the wider Jolt ecosystem
 (jolt-lang's own libraries, JVM and Clojure compatibility, docs and tooling), see
